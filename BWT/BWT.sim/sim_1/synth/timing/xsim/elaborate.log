@@ -1,0 +1,81 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 66c9e55e5d144b9db20d78c92bfb865d --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot BWT_transform_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.BWT_transform_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.sim/sim_1/synth/timing/xsim/BWT_transform_tb_time_synth.v" Line 16. Module BWT_transform has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT6.v" Line 30. Module LUT6 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT1.v" Line 27. Module LUT1 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT1.v" Line 62. Module x_lut1_mux2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT5.v" Line 30. Module LUT5 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT6.v" Line 30. Module LUT6 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 28. Module LUT2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT2.v" Line 65. Module x_lut2_mux4 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT1.v" Line 27. Module LUT1 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/LUT1.v" Line 62. Module x_lut1_mux2 has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "BWT_transform_tb_time_synth.sdf", for root module "BWT_transform_tb/dut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "BWT_transform_tb_time_synth.sdf", for root module "BWT_transform_tb/dut".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.BWT_transform
+Compiling module xil_defaultlib.BWT_transform_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot BWT_transform_tb_time_synth
