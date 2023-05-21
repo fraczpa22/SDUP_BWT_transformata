@@ -2,16 +2,16 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun May 21 13:12:24 2023
-# Process ID: 18724
-# Current directory: D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16200 D:\AGH_magisterskie\SDUP\Projekt\BWT\BWT\BWT.xpr
-# Log file: D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/vivado.log
-# Journal file: D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT\vivado.jou
+# Start of session at: Sun May 21 17:08:33 2023
+# Process ID: 21256
+# Current directory: D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20416 D:\AGH_magisterskie\SDUP\Projekt\SDUP_BWT_transformata\BWT\BWT.xpr
+# Log file: D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/vivado.log
+# Journal file: D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.xpr
+open_project D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source BWT_transform_tb.tcl
-close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
