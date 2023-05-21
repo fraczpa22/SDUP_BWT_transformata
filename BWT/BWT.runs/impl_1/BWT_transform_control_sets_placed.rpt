@@ -1,0 +1,80 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun May 21 12:14:20 2023
+| Host         : fraczpa_pc running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file BWT_transform_control_sets_placed.rpt
+| Design       : BWT_transform
+| Device       : xc7z020
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    13 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|     11 |            1 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             447 |          202 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              33 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------+------------------+------------------+----------------+
+|  Clock Signal  |     Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+----------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                      |                  |                6 |             11 |
+|  clk_IBUF_BUFG | i[31]_i_1_n_0        |                  |                6 |             31 |
+|  clk_IBUF_BUFG | buffor[0][0]_i_1_n_0 |                  |               18 |             32 |
+|  clk_IBUF_BUFG | buffor[1][0]_i_1_n_0 |                  |               16 |             32 |
+|  clk_IBUF_BUFG | buffor[2][0]_i_1_n_0 |                  |               18 |             32 |
+|  clk_IBUF_BUFG | buffor[3][0]_i_1_n_0 |                  |               14 |             32 |
+|  clk_IBUF_BUFG | buffor[4][0]_i_1_n_0 |                  |               19 |             32 |
+|  clk_IBUF_BUFG | buffor[5][0]_i_1_n_0 |                  |               18 |             32 |
+|  clk_IBUF_BUFG | buffor[6][0]_i_1_n_0 |                  |               18 |             32 |
+|  clk_IBUF_BUFG | buffor[7][0]_i_1_n_0 |                  |               21 |             32 |
+|  clk_IBUF_BUFG | data_var[0]_i_1_n_0  |                  |               18 |             32 |
+|  clk_IBUF_BUFG | x[31]_i_1_n_0        |                  |               14 |             32 |
+|  clk_IBUF_BUFG | y[31]_i_1_n_0        |                  |                6 |             32 |
+|  clk_IBUF_BUFG | data_out[0]_i_1_n_0  | rst_IBUF         |               12 |             33 |
+|  clk_IBUF_BUFG | z[31]_i_1_n_0        |                  |               16 |             64 |
++----------------+----------------------+------------------+------------------+----------------+
+
+

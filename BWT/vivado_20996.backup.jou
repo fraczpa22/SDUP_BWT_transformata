@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May  7 15:21:18 2023
+# Process ID: 20996
+# Current directory: D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2000 D:\AGH_magisterskie\SDUP\Projekt\BWT\BWT\BWT.xpr
+# Log file: D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/vivado.log
+# Journal file: D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source BWT_transform_tb.tcl
+run 100 us
+close_sim
+launch_simulation
+source BWT_transform_tb.tcl
+add_bp {D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v} 19
+remove_bps -file {D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v} -line 19
+add_bp {D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v} 23
+remove_bps -file {D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v} -line 23
+add_bp {D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v} 23
+remove_bps -file {D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v} -line 23
+close_sim
+launch_simulation
+source BWT_transform_tb.tcl
+close_sim
+launch_simulation
+source BWT_transform_tb.tcl
+close_sim
+launch_simulation
+source BWT_transform_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source BWT_transform_tb.tcl
+close_sim
