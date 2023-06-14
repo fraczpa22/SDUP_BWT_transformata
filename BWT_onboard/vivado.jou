@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun  5 19:57:20 2023
+# Process ID: 820
+# Current directory: D:/4_rok_semestr_8/SDUP/BWT_onboard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22460 D:\4_rok_semestr_8\SDUP\BWT_onboard\BWT_onboard.xpr
+# Log file: D:/4_rok_semestr_8/SDUP/BWT_onboard/vivado.log
+# Journal file: D:/4_rok_semestr_8/SDUP/BWT_onboard\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project D:/4_rok_semestr_8/SDUP/BWT_onboard/BWT_onboard.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace D:/4_rok_semestr_8/SDUP/BWT_onboard/BWT_onboard.sdk -hwspec D:/4_rok_semestr_8/SDUP/BWT_onboard/BWT_onboard.sdk/design_acc_wrapper.hdf

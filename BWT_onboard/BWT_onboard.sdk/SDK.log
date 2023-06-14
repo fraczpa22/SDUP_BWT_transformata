@@ -1,0 +1,13 @@
+17:44:34 INFO  : Registering command handlers for SDK TCF services
+17:44:36 INFO  : Launching XSCT server: xsct.bat -interactive D:\4_rok_semestr_8\SDUP\BWT_onboard\BWT_onboard.sdk\temp_xsdb_launch_script.tcl
+17:44:40 INFO  : XSCT server has started successfully.
+17:44:40 INFO  : Successfully done setting XSCT server connection channel  
+17:44:47 INFO  : Successfully done setting SDK workspace  
+17:44:48 INFO  : Processing command line option -hwspec D:/4_rok_semestr_8/SDUP/BWT_onboard/BWT_onboard.sdk/design_acc_wrapper.hdf.
+20:02:45 INFO  : Launching XSCT server: xsct.bat -interactive D:\4_rok_semestr_8\SDUP\BWT_onboard\BWT_onboard.sdk\temp_xsdb_launch_script.tcl
+20:02:50 INFO  : XSCT server has started successfully.
+20:03:01 INFO  : Successfully done setting XSCT server connection channel  
+20:03:01 INFO  : Successfully done setting SDK workspace  
+20:03:15 INFO  : Registering command handlers for SDK TCF services
+20:03:15 INFO  : Processing command line option -hwspec D:/4_rok_semestr_8/SDUP/BWT_onboard/BWT_onboard.sdk/design_acc_wrapper.hdf.
+20:03:16 INFO  : Checking for hwspec changes in the project design_acc_wrapper_hw_platform_0.
