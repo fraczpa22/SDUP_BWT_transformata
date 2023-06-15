@@ -131,13 +131,13 @@ module BWT_transform_with_Pipeline(clk, rst, start, data_in, data_out, done);
   input wire clk;              // Sygna³ zegara
   input wire rst;              // Sygna³ resetu
   input wire [0:dl_wyraz-1] data_in;    // Dane wejœciowe
-  output reg [0:dl_wyraz-1] data_out;   // Dane wyjœciowe
+  output wire [0:dl_wyraz-1] data_out;   // Dane wyjœciowe
   output reg done;             // Flaga koñca obliczeñ
   input start;
 
   // Tablica, na której siê wszystko dzieje (rotacja oraz sortowanie)
   reg [0:dl_wyraz-1] buffor[0:ilosc_liter-1];
-  //reg [0:dl_wyraz-1] buffor_rotacji[0:ilosc_liter-1];
+  wire [0:dl_wyraz-1] buffor_rotacji[0:ilosc_liter-1];
   // Przechowanie wartoœci bazowej w trakcie wymiany indeksów podczas sortowania
   reg [0:dl_wyraz-1] data_var;
   // Zawiera ostatnie bity tym samym wyraz wyjœciowy
@@ -153,7 +153,7 @@ module BWT_transform_with_Pipeline(clk, rst, start, data_in, data_out, done);
   generate
     genvar numb;
     for (numb = 1; numb < ilosc_liter; numb = numb + 1) begin : BWT_step_loop
-      BWT_step #(numb, dl_wyraz, szer_litery) BWT_step_part(clk, zacznij, buffor[0], buffor[numb]);
+      BWT_step #(numb, dl_wyraz, szer_litery) BWT_step_part(clk, zacznij, buffor[0], buffor_rotacji[numb]);
     end
 
     genvar numb2;
@@ -162,13 +162,13 @@ module BWT_transform_with_Pipeline(clk, rst, start, data_in, data_out, done);
     end
   endgenerate
 
-
   always @(posedge clk)
   begin
     if (rst) begin
       state <= S1;
-      data_out <= 0;
+      //data_out <= 0;
       done <= 0;
+      scal=0;
       zacznij = 0;
     end
     else begin
@@ -178,6 +178,7 @@ module BWT_transform_with_Pipeline(clk, rst, start, data_in, data_out, done);
           else state <= S1;
         end
         S2: begin
+           
           buffor[0] <= data_in; 
           x = 0;
           y = 0;
@@ -198,36 +199,37 @@ module BWT_transform_with_Pipeline(clk, rst, start, data_in, data_out, done);
           end
         end
         S4: begin // Y
-        
-        if( zacznij==1) begin
-            zacznij = 0;
-           /* buffor[1] <= buffor_rotacji[1];
-            buffor[2] <= buffor_rotacji[2];
-            buffor[3] <= buffor_rotacji[3];
-            buffor[4] <= buffor_rotacji[4];
-            buffor[5] <= buffor_rotacji[5];
-            buffor[6] <= buffor_rotacji[6];
-            buffor[7] <= buffor_rotacji[7];*/
-            //buffor[1:ilosc_liter-1]<=buffor_rotacji[1:ilosc_liter-1];
-         end
-         else begin
-              if (y < ilosc_liter-x-1) begin
-                if (buffor[x] > buffor[x+y+1]) begin
-                  buffor[x] <= buffor[x+y+1];
-                  buffor[x+y+1] <= data_var;
-                  data_var <= buffor[x+y+1];
-                end
-                y = y + 1;
-                state <= S4;
+    
+            if( zacznij==1) begin
+                buffor[1] <= buffor_rotacji[1];
+                buffor[2] <= buffor_rotacji[2];
+                buffor[3] <= buffor_rotacji[3];
+                buffor[4] <= buffor_rotacji[4];
+                buffor[5] <= buffor_rotacji[5];
+                buffor[6] <= buffor_rotacji[6];
+                buffor[7] <= buffor_rotacji[7];
+                zacznij = 0;
+                
+                //buffor[1:ilosc_liter-1]<=buffor_rotacji[1:ilosc_liter-1];
+             end
+             else begin
+                  if (y < ilosc_liter-x-1) begin
+                    if (buffor[x] > buffor[x+y+1]) begin
+                      buffor[x] <= buffor[x+y+1];
+                      buffor[x+y+1] <= data_var;
+                      data_var <= buffor[x+y+1];
+                    end
+                    y = y + 1;
+                    state <= S4;
+                  end
+                  else begin
+                    x = x + 1;
+                    state <= S3;
+                  end
               end
-              else begin
-                x = x + 1;
-                state <= S3;
-              end
-          end
-        end
+            end
         S5: begin
-          scal=0;
+          //scal=1;
           done = 1;
           //data_out <= dana_wyj;
           state <= S6;

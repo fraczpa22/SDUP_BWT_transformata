@@ -69,10 +69,10 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_acc/ip/design_acc_rst_ps7_0_100M_0/sim/design_acc_rst_ps7_0_100M_0.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ipshared/ec67/hdl" "+incdir+../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ipshared/70cf/hdl" "+incdir+../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ip/design_acc_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../bd/design_acc/sim/design_acc.v" \
-"../../../bd/design_acc/ipshared/7d02/hdl/cordic_ip_v1_0_S00_AXI.v" \
-"../../../bd/design_acc/ipshared/7d02/hdl/cordic_ip_v1_0.v" \
+"../../../bd/design_acc/ipshared/43d9/hdl/cordic_ip_v1_0_S00_AXI.v" \
+"../../../bd/design_acc/ipshared/43d9/hdl/cordic_ip_v1_0.v" \
 "../../../bd/design_acc/ip/design_acc_cordic_ip_0_1/sim/design_acc_cordic_ip_0_1.v" \
+"../../../bd/design_acc/sim/design_acc.v" \
 
 vlog -work generic_baseblocks_v2_1_0 -64 "+incdir+../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ipshared/ec67/hdl" "+incdir+../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ipshared/70cf/hdl" "+incdir+../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ip/design_acc_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \

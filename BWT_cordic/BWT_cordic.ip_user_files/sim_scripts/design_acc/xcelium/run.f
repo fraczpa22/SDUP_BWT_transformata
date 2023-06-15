@@ -38,10 +38,10 @@
   "../../../bd/design_acc/ip/design_acc_rst_ps7_0_100M_0/sim/design_acc_rst_ps7_0_100M_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_acc/sim/design_acc.v" \
-  "../../../bd/design_acc/ipshared/7d02/hdl/cordic_ip_v1_0_S00_AXI.v" \
-  "../../../bd/design_acc/ipshared/7d02/hdl/cordic_ip_v1_0.v" \
+  "../../../bd/design_acc/ipshared/43d9/hdl/cordic_ip_v1_0_S00_AXI.v" \
+  "../../../bd/design_acc/ipshared/43d9/hdl/cordic_ip_v1_0.v" \
   "../../../bd/design_acc/ip/design_acc_cordic_ip_0_1/sim/design_acc_cordic_ip_0_1.v" \
+  "../../../bd/design_acc/sim/design_acc.v" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../BWT_cordic.srcs/sources_1/bd/design_acc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
