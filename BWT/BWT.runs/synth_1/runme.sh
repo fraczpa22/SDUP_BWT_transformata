@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log BWT_transform.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BWT_transform.tcl
+EAStep vivado -log BWT_transform_with_Pipeline.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BWT_transform_with_Pipeline.tcl

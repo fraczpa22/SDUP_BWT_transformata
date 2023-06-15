@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/
+webtalk_init -webtalk_dir D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun May 21 13:13:32 2023" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Thu Jun 15 07:07:55 2023" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2405991" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "a317b6fc-51f1-4011-8864-79628e4b3be7" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "66c9e55e5d144b9db20d78c92bfb865d" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "193" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "359" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i9-10900 CPU @ 2.80GHz" -context "user_environment"
@@ -27,6 +27,6 @@ webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7900_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3816252775 -regid "" -xml D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Memory -value "8024_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 662446219 -regid "" -xml D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.sim/sim_1/behav/xsim/xsim.dir/BWT_transform_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

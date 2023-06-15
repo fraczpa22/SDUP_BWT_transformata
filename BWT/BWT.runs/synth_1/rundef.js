@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log BWT_transform.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BWT_transform.tcl" );
+         "-log BWT_transform_with_Pipeline.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BWT_transform_with_Pipeline.tcl" );
 
 
 

@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../BWT_cordic.ip_user_files/bd/design_acc/ip/design_acc_rst_ps7_0_100M_0/sim/design_acc_rst_ps7_0_100M_0.vhd" \
+
+# Do not sort compile order
+nosort

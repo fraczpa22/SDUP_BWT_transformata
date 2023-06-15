@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.ip_user_files/bd/design_acc/ip/design_acc_processing_system7_0_0/sim/design_acc_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_acc_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.ip_user_files/bd/design_acc/sim/design_acc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_acc
+INFO: [VRFC 10-311] analyzing module design_acc_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1L1O7WI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.ip_user_files/bd/design_acc/ipshared/3dcb/hdl/cordic_ip_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic_ip_v1_0_S00_AXI
+INFO: [VRFC 10-311] analyzing module BWT_transform
+INFO: [VRFC 10-311] analyzing module BWT_step
+INFO: [VRFC 10-311] analyzing module BWT_last_letter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.ip_user_files/bd/design_acc/ipshared/3dcb/hdl/cordic_ip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic_ip_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.ip_user_files/bd/design_acc/ip/design_acc_cordic_ip_0_1/sim/design_acc_cordic_ip_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_acc_cordic_ip_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.ip_user_files/bd/design_acc/ip/design_acc_auto_pc_0/sim/design_acc_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_acc_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.srcs/sources_1/bd/design_acc/hdl/design_acc_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_acc_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.ip_user_files/bd/design_acc/ip/design_acc_rst_ps7_0_100M_0/sim/design_acc_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_acc_rst_ps7_0_100M_0'
