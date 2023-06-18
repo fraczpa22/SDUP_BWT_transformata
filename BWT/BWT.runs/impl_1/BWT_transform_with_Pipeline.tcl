@@ -65,16 +65,15 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.cache/wt [current_project]
-  set_property parent.project_path D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.xpr [current_project]
+  set_property webtalk.parent_dir D:/AGH_magisterskie/SDUP/SDUP_BWT_transformata/BWT/BWT.cache/wt [current_project]
+  set_property parent.project_path D:/AGH_magisterskie/SDUP/SDUP_BWT_transformata/BWT/BWT.xpr [current_project]
   set_property ip_output_repo D:/AGH_magisterskie/SDUP/Projekt/BWT/BWT/BWT.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.runs/synth_1/BWT_transform_with_Pipeline.dcp
+  add_files -quiet D:/AGH_magisterskie/SDUP/SDUP_BWT_transformata/BWT/BWT.runs/synth_1/BWT_transform_with_Pipeline.dcp
   link_design -top BWT_transform_with_Pipeline -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]

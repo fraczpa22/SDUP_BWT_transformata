@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Jun 15 07:02:54 2023
+| Date             : Sun Jun 18 14:22:40 2023
 | Host             : fraczpa_pc running 64-bit major release  (build 9200)
 | Command          : report_power -file BWT_transform_with_Pipeline_power_routed.rpt -pb BWT_transform_with_Pipeline_power_summary_routed.pb -rpx BWT_transform_with_Pipeline_power_routed.rpx
 | Design           : BWT_transform_with_Pipeline
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.278        |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.171        |
-| Device Static (W)        | 0.107        |
-| Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 81.8         |
-| Junction Temperature (C) | 28.2         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+---------------------------------+
+| Total On-Chip Power (W)  | 5.819 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                    |
+| Power Budget Margin (W)  | NA                              |
+| Dynamic (W)              | 5.419                           |
+| Device Static (W)        | 0.400                           |
+| Effective TJA (C/W)      | 11.5                            |
+| Max Ambient (C)          | 17.9                            |
+| Junction Temperature (C) | 92.1                            |
+| Confidence Level         | Low                             |
+| Setting File             | ---                             |
+| Simulation Activity File | ---                             |
+| Design Nets Matched      | NA                              |
++--------------------------+---------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.085 |      256 |       --- |             --- |
-|   LUT as Logic |     0.064 |      103 |     53200 |            0.19 |
-|   CARRY4       |     0.015 |       32 |     13300 |            0.24 |
+| Slice Logic    |     2.320 |     1187 |       --- |             --- |
+|   LUT as Logic |     2.172 |      600 |     53200 |            1.13 |
+|   CARRY4       |     0.068 |       44 |     13300 |            0.33 |
+|   F7/F8 Muxes  |     0.055 |       61 |     53200 |            0.11 |
+|   Register     |     0.019 |      423 |    106400 |            0.40 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Register     |    <0.001 |       69 |    106400 |            0.06 |
-|   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.070 |      200 |       --- |             --- |
-| I/O            |     0.016 |       36 |       200 |           18.00 |
-| Static Power   |     0.107 |          |           |                 |
-| Total          |     0.278 |          |           |                 |
+|   Others       |     0.000 |       17 |       --- |             --- |
+| Signals        |     2.119 |      708 |       --- |             --- |
+| I/O            |     0.979 |       68 |       200 |           34.00 |
+| Static Power   |     0.400 |          |           |                 |
+| Total          |     5.819 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,20 +72,20 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.171 |       0.163 |      0.008 |
-| Vccaux    |       1.800 |     0.011 |       0.001 |      0.011 |
+| Vccint    |       1.000 |     4.674 |       4.576 |      0.099 |
+| Vccaux    |       1.800 |     0.114 |       0.069 |      0.045 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.005 |       0.004 |      0.001 |
+| Vcco18    |       1.800 |     0.400 |       0.399 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.007 |       0.000 |      0.007 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
+| Vccpint   |       1.000 |     0.151 |       0.000 |      0.151 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -142,10 +143,25 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------------------------+-----------+
-| Name                        | Power (W) |
-+-----------------------------+-----------+
-| BWT_transform_with_Pipeline |     0.171 |
-+-----------------------------+-----------+
++------------------------------------------------+-----------+
+| Name                                           | Power (W) |
++------------------------------------------------+-----------+
+| BWT_transform_with_Pipeline                    |     5.419 |
+|   BWT_last_letter_loop[0].BWT_last_letter_part |     0.001 |
+|   BWT_last_letter_loop[1].BWT_last_letter_part |     0.002 |
+|   BWT_last_letter_loop[2].BWT_last_letter_part |     0.002 |
+|   BWT_last_letter_loop[3].BWT_last_letter_part |     0.002 |
+|   BWT_last_letter_loop[4].BWT_last_letter_part |     0.002 |
+|   BWT_last_letter_loop[5].BWT_last_letter_part |     0.001 |
+|   BWT_last_letter_loop[6].BWT_last_letter_part |     0.002 |
+|   BWT_last_letter_loop[7].BWT_last_letter_part |     0.002 |
+|   BWT_step_loop[1].BWT_step_part               |     0.235 |
+|   BWT_step_loop[2].BWT_step_part               |     0.147 |
+|   BWT_step_loop[3].BWT_step_part               |     0.123 |
+|   BWT_step_loop[4].BWT_step_part               |     0.133 |
+|   BWT_step_loop[5].BWT_step_part               |     0.136 |
+|   BWT_step_loop[6].BWT_step_part               |     0.136 |
+|   BWT_step_loop[7].BWT_step_part               |     0.139 |
++------------------------------------------------+-----------+
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Jun 15 07:02:32 2023
+| Date         : Sun Jun 18 14:22:17 2023
 | Host         : fraczpa_pc running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file BWT_transform_with_Pipeline_control_sets_placed.rpt
 | Design       : BWT_transform_with_Pipeline
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    11 |
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    41 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,9 +34,9 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      1 |            1 |
-|      4 |            1 |
-|    16+ |            2 |
+|      1 |            5 |
+|      6 |            1 |
+|    16+ |           13 |
 +--------+--------------+
 
 
@@ -46,25 +46,40 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | No                     |               6 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              32 |            7 |
+| No           | Yes                   | No                     |              64 |           31 |
+| Yes          | No                    | No                     |             288 |          111 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              33 |            7 |
+| Yes          | Yes                   | No                     |              65 |           19 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+------------------+------------------+----------------+
-|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+---------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG | done_i_1_n_0  | rst_IBUF         |                1 |              1 |
-|  clk_IBUF_BUFG |               |                  |                2 |              4 |
-|  clk_IBUF_BUFG | x[31]_i_1_n_0 |                  |                7 |             32 |
-|  clk_IBUF_BUFG | y[31]_i_2_n_0 | y[31]_i_1_n_0    |                6 |             32 |
-+----------------+---------------+------------------+------------------+----------------+
++----------------+----------------------+----------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |     Enable Signal    |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++----------------+----------------------+----------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                      | BWT_step_loop[2].BWT_step_part/buffor_reg[0][28]         |                1 |              1 |
+|  clk_IBUF_BUFG |                      | BWT_step_loop[2].BWT_step_part/buffor_reg[0][30]         |                1 |              1 |
+|  clk_IBUF_BUFG |                      | BWT_step_loop[2].BWT_step_part/buffor_reg[0][31]         |                1 |              1 |
+|  clk_IBUF_BUFG |                      | BWT_step_loop[2].BWT_step_part/buffor_reg[0][29]         |                1 |              1 |
+|  clk_IBUF_BUFG | done_i_1_n_0         | rst_IBUF                                                 |                1 |              1 |
+|  clk_IBUF_BUFG |                      |                                                          |                5 |              6 |
+|  clk_IBUF_BUFG |                      | BWT_step_loop[7].BWT_step_part/zacznij_reg[0]            |               15 |             28 |
+|  clk_IBUF_BUFG |                      | BWT_last_letter_loop[7].BWT_last_letter_part/scal_reg[0] |               12 |             32 |
+|  clk_IBUF_BUFG | buffor[0][0]_i_1_n_0 |                                                          |               12 |             32 |
+|  clk_IBUF_BUFG | buffor[1][0]_i_1_n_0 |                                                          |               13 |             32 |
+|  clk_IBUF_BUFG | buffor[2][0]_i_1_n_0 |                                                          |               13 |             32 |
+|  clk_IBUF_BUFG | buffor[4][0]_i_1_n_0 |                                                          |               12 |             32 |
+|  clk_IBUF_BUFG | buffor[5][0]_i_1_n_0 |                                                          |               14 |             32 |
+|  clk_IBUF_BUFG | buffor[3][0]_i_1_n_0 |                                                          |               12 |             32 |
+|  clk_IBUF_BUFG | buffor[6][0]_i_1_n_0 |                                                          |               12 |             32 |
+|  clk_IBUF_BUFG | buffor[7][0]_i_1_n_0 |                                                          |               13 |             32 |
+|  clk_IBUF_BUFG | data_var[0]_i_1_n_0  |                                                          |               10 |             32 |
+|  clk_IBUF_BUFG | x[31]_i_2_n_0        | x[31]_i_1_n_0                                            |                9 |             32 |
+|  clk_IBUF_BUFG | y[31]_i_2_n_0        | y[31]_i_1_n_0                                            |                9 |             32 |
++----------------+----------------------+----------------------------------------------------------+------------------+----------------+
 
 

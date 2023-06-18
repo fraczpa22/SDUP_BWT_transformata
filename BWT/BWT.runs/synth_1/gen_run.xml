@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1686805306">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1687090893">
   <File Type="PA-TCL" Name="BWT_transform_with_Pipeline.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="BWT_transform_with_Pipeline_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BWT_transform_with_Pipeline_reports.tcl"/>
   <File Type="RDS-RDS" Name="BWT_transform_with_Pipeline.vds"/>
   <File Type="RDS-UTIL" Name="BWT_transform_with_Pipeline_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="BWT_transform_with_Pipeline_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="BWT_transform_with_Pipeline.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="BWT_transform_with_Pipeline_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="BWT_transform_with_Pipeline_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/BWT_last_letter.v">

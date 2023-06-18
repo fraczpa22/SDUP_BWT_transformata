@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.runs/impl_1'
+HD_PWD='D:/AGH_magisterskie/SDUP/SDUP_BWT_transformata/BWT/BWT.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
