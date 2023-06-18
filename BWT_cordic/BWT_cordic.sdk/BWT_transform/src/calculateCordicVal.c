@@ -16,19 +16,10 @@
 #define CONTROL_REG_START_MASK (u32)(0x01)
 #define STATUS_REG_READY_MASK (u32)(0x01)
 
-// Macors to extract sinus and cosinus values from the accelerator output data register
-// Shift left and right to fill msb of int32_t with ones - arithmetic shift  
-
 
 
 /***************************** calculateCordicVal function **********************
-* The function runs the cordic accelerator IP
-* Argument:
-* angle - input angle in radians. Fixed-point(12:10) format
-* Return values:
-* sin - sinus value. Fixed-point(12:10) format
-* cos - cosinus value. Fixed-point(12:10) format
-*
+
 */
 
 int calculateBWT(u32 input_string, s32* result)

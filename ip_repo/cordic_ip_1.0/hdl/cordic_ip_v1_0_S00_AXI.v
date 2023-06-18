@@ -424,26 +424,26 @@ BWT_transform BWT_transform_inst( S_AXI_ACLK, //clock,
 	
 module BWT_transform(clk, rst, start, data_in, data_out, done);
 
-  // Okreœlenie szerokoœci wyrazu (wprost zale¿ne od szerokoœci data_in)
+  // Okreï¿½lenie szerokoï¿½ci wyrazu (wprost zaleï¿½ne od szerokoï¿½ci data_in)
   parameter integer dl_wyraz = 32;
-  // Okreœlenie szerokoœci litery
+  // Okreï¿½lenie szerokoï¿½ci litery
   parameter integer szer_litery = 4;
-  // Okreœlenie iloœci liter
+  // Okreï¿½lenie iloï¿½ci liter
   parameter integer ilosc_liter = dl_wyraz / szer_litery;
 
-  input wire clk;              // Sygna³ zegara
-  input wire rst;              // Sygna³ resetu
-  input wire [0:dl_wyraz-1] data_in;    // Dane wejœciowe
-  output wire [0:dl_wyraz-1] data_out;   // Dane wyjœciowe
-  output reg done;             // Flaga koñca obliczeñ
+  input wire clk;              // Sygnaï¿½ zegara
+  input wire rst;              // Sygnaï¿½ resetu
+  input wire [0:dl_wyraz-1] data_in;    // Dane wejï¿½ciowe
+  output wire [0:dl_wyraz-1] data_out;   // Dane wyjï¿½ciowe
+  output reg done;             // Flaga koï¿½ca obliczeï¿½
   input start;
 
-  // Tablica, na której siê wszystko dzieje (rotacja oraz sortowanie)
+  // Tablica, na ktï¿½rej siï¿½ wszystko dzieje (rotacja oraz sortowanie)
   reg [0:dl_wyraz-1] buffor[0:ilosc_liter-1];
   wire [0:dl_wyraz-1] buffor_rotacji[0:ilosc_liter-1];
-  // Przechowanie wartoœci bazowej w trakcie wymiany indeksów podczas sortowania
+  // Przechowanie wartoï¿½ci bazowej w trakcie wymiany indeksï¿½w podczas sortowania
   reg [0:dl_wyraz-1] data_var;
-  // Zawiera ostatnie bity tym samym wyraz wyjœciowy
+  // Zawiera ostatnie bity tym samym wyraz wyjï¿½ciowy
 //wire [0:dl_wyraz-1] dana_wyj;
 
   parameter S1 = 3'h01, S2 = 3'h02, S3 = 3'h03, S4 = 3'h04, S5 = 3'h05, S6 = 3'h06, S7 = 3'h07;
@@ -595,7 +595,7 @@ input start;
 
 //tablica na ktorej sie wszystko dzieje ( rotacja oraz sortowanie)
 reg [0:dl_wyraz-1] buffor [0:ilosc_liter-1];
-//przechowanie wartosci bazowej w trakcie wymiany indeksów podczas sortowania
+//przechowanie wartosci bazowej w trakcie wymiany indeksï¿½w podczas sortowania
 reg [0:dl_wyraz-1] data_var;
 //zawiera ostatnie bity tym samym wyraz wyjsciowy
 reg [0:dl_wyraz-1] dana_wyj;

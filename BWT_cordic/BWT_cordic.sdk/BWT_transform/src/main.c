@@ -20,15 +20,8 @@
 //Define PI in fxp(12:10)
 #define PI 3215
 
-/**
- *
- */
-int calculateBWT(u32 input_string, s32* result);
+teBWT(u32 input_string, s32* result);
 
-
-/**
- *
- */
 u32 readHexVal() {
     u32 ret = 0;
     char8 c;
@@ -56,7 +49,6 @@ int main()
 u32 input_string = 0;
 s32 result;
 
-
     init_platform();
 
     while(1){
@@ -71,7 +63,5 @@ s32 result;
     	xil_printf("0x%X", result);
     	print("\n\r");
     }
-
-
 
 }
