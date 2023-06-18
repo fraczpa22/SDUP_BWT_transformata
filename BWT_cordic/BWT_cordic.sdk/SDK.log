@@ -560,3 +560,9 @@ con
 
 23:50:53 INFO  : Launch script is exported to file 'D:\AGH_magisterskie\SDUP\Projekt\SDUP_BWT_transformata\BWT_cordic\BWT_cordic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_bwt_transform.elf_on_local.tcl'
 02:04:24 INFO  : Disconnected from the channel tcfchan#3.
+07:36:46 INFO  : Registering command handlers for SDK TCF services
+07:36:47 INFO  : Launching XSCT server: xsct.bat -interactive D:\Projekty\SDUP\SDUP_BWT_transformata\BWT_cordic\BWT_cordic.sdk\temp_xsdb_launch_script.tcl
+07:36:49 INFO  : XSCT server has started successfully.
+07:36:49 INFO  : Successfully done setting XSCT server connection channel  
+07:36:52 INFO  : Successfully done setting SDK workspace  
+07:36:52 INFO  : Processing command line option -hwspec D:/Projekty/SDUP/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sdk/design_acc_wrapper.hdf.

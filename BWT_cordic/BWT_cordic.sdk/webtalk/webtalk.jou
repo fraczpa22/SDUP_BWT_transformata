@@ -2,11 +2,11 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # 
-# Start of session at: Wed Jun 14 22:21:20 2023
-# Process ID: 23360
-# Current directory: D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sdk/webtalk
+# Start of session at: Sun Jun 18 07:41:41 2023
+# Process ID: 10168
+# Current directory: D:/Projekty/SDUP/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sdk/webtalk/webtalk.log
-# Journal file: D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sdk/webtalk\webtalk.jou
+# Log file: D:/Projekty/SDUP/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sdk/webtalk/webtalk.log
+# Journal file: D:/Projekty/SDUP/SDUP_BWT_transformata/BWT_cordic/BWT_cordic.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

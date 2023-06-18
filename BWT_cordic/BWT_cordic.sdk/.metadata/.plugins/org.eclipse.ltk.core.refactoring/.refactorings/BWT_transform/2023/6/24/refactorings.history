@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BWT_transform/src/calculateCordicVal.c&apos; to &apos;calculateBWT.c&apos;" description="Rename resource &apos;calculateCordicVal.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/calculateCordicVal.c" name="calculateBWT.c" stamp="1687066719641" updateReferences="true"/>
+</session>

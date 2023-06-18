@@ -1,5 +1,11 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.srcs/sources_1/new/BWT_transform.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projekty/SDUP/SDUP_BWT_transformata/BWT/BWT.srcs/sources_1/new/BWT_last_letter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BWT_last_letter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projekty/SDUP/SDUP_BWT_transformata/BWT/BWT.srcs/sources_1/new/BWT_step.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BWT_step
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projekty/SDUP/SDUP_BWT_transformata/BWT/BWT.srcs/sources_1/new/BWT_transform.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BWT_transform
 INFO: [VRFC 10-311] analyzing module BWT_transform_with_Pipeline
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AGH_magisterskie/SDUP/Projekt/SDUP_BWT_transformata/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projekty/SDUP/SDUP_BWT_transformata/BWT/BWT.srcs/sources_1/new/test_bwt_transform.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BWT_transform_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projekty/SDUP/SDUP_BWT_transformata/BWT/BWT.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

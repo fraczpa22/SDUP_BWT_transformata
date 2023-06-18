@@ -1,8 +1,8 @@
-10:17:53 **** Incremental Build of configuration Debug for project BWT_transform ****
+07:40:38 **** Incremental Build of configuration Debug for project BWT_transform ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-10:17:53 Build Finished (took 234ms)
+07:40:38 Build Finished (took 156ms)
 
